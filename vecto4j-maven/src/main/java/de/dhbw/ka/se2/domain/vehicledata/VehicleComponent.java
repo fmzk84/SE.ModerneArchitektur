@@ -1,8 +1,9 @@
 package de.dhbw.ka.se2.domain.vehicledata;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class VehicleComponent {
+public class VehicleComponent implements Serializable{
 	private int id;
 	private ComponentType type;
 	private LocalDate validFrom;
