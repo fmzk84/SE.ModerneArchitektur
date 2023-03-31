@@ -1,5 +1,4 @@
 # SE.ModerneArchitektur
-# 
 
 **Über arc42**
 
