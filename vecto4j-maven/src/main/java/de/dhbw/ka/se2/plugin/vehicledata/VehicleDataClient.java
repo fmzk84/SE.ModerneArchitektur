@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.util.List;
 
 import org.apache.hc.client5.http.fluent.Request;
 import org.apache.hc.client5.http.fluent.Response;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
@@ -18,11 +20,11 @@ import de.dhbw.ka.se2.domain.vehicledata.VehicleComponent;
 public class VehicleDataClient {
 	public static void main(String[] args) {
 		VehicleConfigGenerator gen = new VehicleConfigGenerator();
-		VehicleConfiguration vehicle = gen.generateVehicle(false);
+		VehicleConfiguration vehicle = gen.generateVehicle(false).getConfig();
 		System.out.println(new VehicleDataClient().getComponents(vehicle));
 	}
 
-	public VehicleComponent getComponents(final VehicleConfiguration vehicle) {
+	public List<VehicleComponent> getComponents(final VehicleConfiguration vehicle) {
 		// Anfrage serialisieren
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.registerModule(new JavaTimeModule());
@@ -56,7 +58,7 @@ public class VehicleDataClient {
 			throw new RuntimeException("Request failed - missing response!");
 		}
 		try {
-			return objectMapper.readValue(body, VehicleComponent.class);
+			return objectMapper.readValue(body, new TypeReference<List<VehicleComponent>>() {});
 		} catch (IOException e) {
 			throw new RuntimeException("Request failed - cannot parse response!");
 		}
