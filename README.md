@@ -21,6 +21,8 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
+
+Ziel ist es eine Schnittstelle für den Dokumentendruck zu entwickeln.
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
@@ -79,6 +81,11 @@ arc42 documentation.
 **Contents**
 
 </div>
+
+| Qualitätsziel   | Motivation und Erläuterung        |
+|-------------|----------------|
+| *\<Role-1>* | *\<Contact-1>* |
+| *\<Role-2>* | *\<Contact-2>* |
 
 The top three (max five) quality goals for the architecture whose
 fulfillment is of highest importance to the major stakeholders. We
