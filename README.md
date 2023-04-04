@@ -22,57 +22,14 @@ concepts. For documentation of your own system you use better the
 # Introduction and Goals
 
 
-Ziel ist es eine Schnittstelle für den Dokumentendruck zu entwickeln.
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
+Der Dokumentendruck benötigt nach einer neuen Rechtsgrundlage individuelle Simulationsergebnise von Fahrzeugen. Ziel ist es eine Schnittstelle für den Dokumentendruck zu entwickeln. Hierfür müssen hauptsächlich bestehende Klassen angebunden werden. Ziel ist es eine funktionale Sofware unter Einhaltung der Clean-Code-Regeln zu entwickeln. Zusätzlich soll eine gute Dokumentation geschaffen werden.
 
--   underlying business goals,
+## Primary Features
 
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations
-
-## Requirements Overview
-
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
-
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
-
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
+- Schnittstelle zwischen den Abteilungen Druck, Entwicklung und Logistik mit Anbindung der VECTO-Library
+- gibt bei bloßer Eingabe einer gültigen Fahrzeugkonfiguration ein richtiges Simulationsergebnis zurück
+- Clean-Code
+- ausführliche Dokumentation
 
 ## Quality Goals
 
@@ -84,121 +41,17 @@ arc42 documentation.
 
 | Qualitätsziel   | Motivation und Erläuterung        |
 |-------------|----------------|
-| *\<Role-1>* | *\<Contact-1>* |
-| *\<Role-2>* | *\<Contact-2>* |
-
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
-
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-A table with quality goals and concrete scenarios, ordered by priorities
+| *Änderbarkeit* | *Es muss schnell auf neue Gesetzesänderungen reagiert werden können. Passiert dies nicht, kann es zu Strafen oder Produktionsstopps kommen.* |
+| *Zuverlässigkeit* | *Die Software muss in der Lage sein große Mengen an Daten verarbeiten und weiterleiten zu können.* |
+| *Funktionalität* | *Die Software soll die  für sie definierten Anforderungen effizient und fehlerfrei erfüllen.* |
 
 ## Stakeholders
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
-
-| Role/Name   | Contact        | Expectations       |
-|-------------|----------------|--------------------|
-| *\<Role-1>* | *\<Contact-1>* | *\<Expectation-1>* |
-| *\<Role-2>* | *\<Contact-2>* | *\<Expectation-2>* |
+Stakeholder sind hauptsächlich die drei Abteilungen Dokumentendruck, Fahrzeugentwicklung und Logisitk. Ein weiterer möglicher Stakeholder ist der Hersteller der Vecto4J Library.
 
 # Architecture Constraints
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
+Die Softwarearchitektur ist unter anderem durch die bestehenden APIs, die Vecto-Library und weiteren bestehenden Code beschränkt.
 
 # System Scope and Context
 
