@@ -1,7 +1,13 @@
 package de.dhbw.ka.se2.application.vecto;
 
+import java.util.List;
+
+import de.dhbw.ka.se2.adapter.vehicledata.VehicleComponentDecoder;
+import de.dhbw.ka.se2.domain.logistics.VehicleWeights;
 import de.dhbw.ka.se2.domain.print.FullVehicle;
 import de.dhbw.ka.se2.domain.print.VehicleConfiguration;
+import de.dhbw.ka.se2.domain.vehicledata.VehicleComponent;
+import de.dhbw.ka.se2.plugin.vehicledata.VehicleDataClient;
 import de.dhbw.ka.se2.vecto4j.IncompleteVehicleException;
 import de.dhbw.ka.se2.vecto4j.Simulator;
 import de.dhbw.ka.se2.vecto4j.WrongVehicleClassException;
@@ -60,11 +66,15 @@ public class Co2SimulationProcess {
 	}
 
 	private void enrichInputWithComponents(final VehicleConfiguration config, final VehicleInput input) {
-		
+		List<VehicleComponent> components = new VehicleDataClient().getComponents(config);
+		new VehicleComponentDecoder().decodeAndAddComponents(components, input);
  }
 
 	private void enrichInputWithWeights(final VehicleConfiguration config, final VehicleInput input) {
-
+		VehicleWeights weights = weightsAccess.getWeights(config);
+		input.setMaxPermissibleWeight(weights.getMaxPermissibleWeight());
+		input.setWeight(weights.getWeight());
+		
  }
 
 }
