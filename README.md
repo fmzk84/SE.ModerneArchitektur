@@ -74,6 +74,8 @@ interfaces, packages, libraries, frameworks, layers, partitions, tiers,
 functions, macros, operations, data structures, …) as well as their
 dependencies (relationships, associations, …)
 
+![C4_Systemkontext](https://user-images.githubusercontent.com/114069919/235234784-8b159e59-3f43-4707-83d1-57e5a82f7159.JPG)
+
 This view is mandatory for every architecture documentation. In analogy
 to a house this is the *floor plan*.
 
