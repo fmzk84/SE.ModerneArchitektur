@@ -82,12 +82,6 @@ Die Begründungen und Alternativen zu den Einzelnen Entscheidungen sind in den M
 
 # Risiken und technische Schulden
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
 Eine Liste der möglichen technischen Risiken oder Schulden, die mit der Architektur der Software verbunden sind. Diese entstehen, wenn Fehler beim Design 
 und der Planung der Architektur oder der Erstellung der Dokumentation gemacht werden.
 
