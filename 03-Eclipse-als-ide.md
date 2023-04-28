@@ -1,56 +1,43 @@
-# Maven als Build-Tool
+# Eclipse als IDE
 
 * Status: accepted
-* Datum: 2023-04-18
+* Datum: 2023-03-15
 
 ## Kontext und Problemstellung
 
-Es muss entschieden werden, mit welchem Build-Tool gearbeitet werden soll.
+Es muss entschieden werden, mit welcher IDE in dem Projekt gearbeitet wird.
 
 ## Berücksichtigte Optionen
 
-* Maven
-* Gradle
-* Ant
+* Eclipse
+* IntelliJ
 
 ## Ergebnis der Entscheidung
 
-Ausgewählte Option: "Maven", Es wurde entschieden, dass Maven das Build-Tool für das Projekt darstellt. 
+Ausgewählte Option: "Eclipse", Es wurde entschieden, dass Eclipse das IDE für das Projekt wird. 
 
-- Einfache Konfiguration durch XML-Dateien
-- Einfache Abhängigkeitsverwaltung durch das zentrale Repository
-- Möglichkeit zur Erstellung von Artefakten wie JARs, WARs oder EARs
-- Unterstützung von Plugins, um zusätzliche Funktionalität bereitzustellen
-
+- alle nötigen Funtkionen
+- komplett kostenlos
+- Gruppenmitglieder haben schon damit gearbeitet
+- 
 ### Positives
-* Die große Nutzer-Community von Maven sorgt für eine ausgezeichnete Unterstützung und reichlich Ressourcen bei Problemen.
-* Mit Hilfe von Plugins können zusätzliche Funktionalitäten wie beispielsweise die Integration von Test-Frameworks oder die Erstellung von Dokumentation in Maven leicht bereitgestellt werden.
-* Die zentrale Verwaltung von Abhängigkeiten durch Maven stellt sicher, dass nur kompatible Versionen verwendet werden, was die Stabilität und Kompatibilität der Anwendung verbessert.
+* Eclipse beinhaltet alle für das Projekten nötigen Funtkionen, beispielweise GitHub-Integration.
+* Alle Gruppenmitglieder haben Eclipse schon einmal benutzt.
+* Enige Dateien mit denen wir in dem Projekt arbeiten müssen wurden als Eclipse-Projekt geliefert.
 
 ### Negatives 
 
-* Im Vergleich zu anderen Build-Tools wie Gradle kann die Build-Zeit von Maven länger sein, da es mehr Overhead / zusätzliche Ressourcen gibt.
-* Die Konfiguration von Maven erfordert möglicherweise mehr Zeit und Anstrengung, da sie durch XML-Dateien erfolgt und nicht so intuitiv ist wie bei anderen Build-Tools.
-
+* Weniger intuitive Steuerung als andere IDEs.
+* Teilweise komplizierte GitHub-Integration.
 
 ## Pros und Cons der Alternativen 
 
-### Gradle
+### IntelliJ
 
 #### Pros
-- Bessere Performance -> bessere skalierbarkeit bei großen Projekten
-- Bessere Integration (z.B. mit IDEs)
+- sehr intuitive Steuerung
+- deutliche problemlosere Interaktion mit Git
 
 #### Cons
-- Komplexere Umsetzung für Anfänger
-- Komplexere Build-Sprache 
-
-### Ant
-
-#### Pros
-- Vergleichsweise höhere Anpassungsfähigkeit und Flexibilität
-- Hohe Kompabilität im Bezug zu anderen Build-Tools und IDEs
-
-#### Cons
-- Projektstruktur nicht standardisiert
-- Plugin Unterstützung ist geringer
+- nicht komplett kostenlos
+- recht kompliziert das Eclipse-Projekt in IntelliJ zum laufen zu bekommen
