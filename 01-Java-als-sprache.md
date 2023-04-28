@@ -1,26 +1,24 @@
-# Maven als Build-Tool
+# Java als Sprache
 
 * Status: accepted
-* Datum: 2023-04-18
+* Datum: 2023-03-31
 
 ## Kontext und Problemstellung
 
-Es muss entschieden werden, mit welchem Build-Tool gearbeitet werden soll.
+Es muss entschieden werden, mit welcher Programmiersprache gearbeitet werden soll.
 
 ## Berücksichtigte Optionen
 
-* Maven
-* Gradle
-* Ant
+* Java
+* Python
 
 ## Ergebnis der Entscheidung
 
-Ausgewählte Option: "Maven", Es wurde entschieden, dass Maven das Build-Tool für das Projekt darstellt. 
+Ausgewählte Option: "Java", Es wurde entschieden, dass Java die Programmiersprache für das Projekt wird. 
 
-- Einfache Konfiguration durch XML-Dateien
-- Einfache Abhängigkeitsverwaltung durch das zentrale Repository
-- Möglichkeit zur Erstellung von Artefakten wie JARs, WARs oder EARs
-- Unterstützung von Plugins, um zusätzliche Funktionalität bereitzustellen
+- alle Gruppenmitglieder haben damit Erfahrung
+- Kentnisse in gängigen Java-IDEs
+- für das Projekt nötige Java-Library
 
 ### Positives
 * Die große Nutzer-Community von Maven sorgt für eine ausgezeichnete Unterstützung und reichlich Ressourcen bei Problemen.
