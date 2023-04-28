@@ -20,7 +20,7 @@ import de.dhbw.ka.se2.domain.vehicledata.VehicleComponent;
 public class VehicleDataClient {
 	public static void main(String[] args) {
 		VehicleConfigGenerator gen = new VehicleConfigGenerator();
-		VehicleConfiguration vehicle = gen.generateVehicle(false);
+		VehicleConfiguration vehicle = gen.generateVehicle(false).getConfig();
 		System.out.println(new VehicleDataClient().getComponents(vehicle));
 	}
 
