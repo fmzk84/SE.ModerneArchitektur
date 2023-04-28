@@ -82,7 +82,7 @@ Hier wird der Programmablauf textuell beschrieben.
 </div>
 
 Architekturentscheidungen sind wichtige und/oder große Entscheidugen, welche einen hohen Einfluss auf den weiteren Ablauf des Projekts haben. Wir haben diese Entscheidungen als Architectual Decision Records (kurz ADRs) aufgezeichnet.
-Die Architekturentscheidungen haben wir zur besseren Lesbarkeit als einzelne MADRs ausgegliedert. Diese sind als einzelne Dateien im Repository zu finden. Sie sind nach folgenden Schema benannt: 01-Titel_der_Entscheidung.md
+Die Architekturentscheidungen haben wir zur besseren Lesbarkeit als einzelne MADRs ausgegliedert. Diese sind als einzelne Dateien im Repository zu finden. Sie sind nach folgenden Schema benannt: 01-Titel-der-entscheidung.md
 
 Trotzdem soll hier eine kurze Zusammenfassung gegeben werden. Wir haben uns bei der Entwicklung der Software für eine Schichtenarchitektur entschieden. 
 Als Build-Tool wurde Maven benutzt und als Programmiersprache Java. Es wurde geplant die Software zukünftig containerisiert laufen zu lassen. 
