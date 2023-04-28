@@ -68,12 +68,6 @@ Randbedingungen:
   
 # Bausteinsicht
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
 The building block view shows the static decomposition of the system
 into building blocks (modules, components, subsystems, classes,
 interfaces, packages, libraries, frameworks, layers, partitions, tiers,
@@ -82,6 +76,8 @@ dependencies (relationships, associations, …)
 
 This view is mandatory for every architecture documentation. In analogy
 to a house this is the *floor plan*.
+
+![Kontext_System](https://user-images.githubusercontent.com/114069919/235234220-42776560-b78b-439f-95e0-983502253f26.JPG)
 
 <div class="formalpara-title">
 
