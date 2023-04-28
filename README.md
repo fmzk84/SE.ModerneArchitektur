@@ -113,29 +113,3 @@ und der Planung der Architektur oder der Erstellung der Dokumentation gemacht we
 * Hohe Komplexität: Ist das Design der Software zu Komplex und/oder die Dokumentation dazu nicht ausreichend, kann es passieren, dass Entwickler die bisher noch wenig mit der Software gearbeitet haben ihre Funktionsweise nicht nachvollziehen können und entsprechend nicht gut daran arbeiten können
 * Geringe Änderbarkeit: Wenn die Software nicht änderbar genung ist, kann es passieren, dass nicht schnell genug auf Gesetztesänderungen reagiert werden kann was dazu führen könnte, dass die Produktion stoppen muss.
 * Zu geringe Leistung: Wenn durch Tests nicht sichergestellt wird, dass die Software schnell gunug arbeitet kann es sein, dass sie nicht wirklich für den Produktivbetrieb geeignet ist.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
