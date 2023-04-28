@@ -149,8 +149,8 @@ Die Begründungen und Alternativen zu den Einzelnen Entscheidungen sind in den M
 
 </div>
 
-A list of identified technical risks or technical debts, ordered by
-priority
+Eine Liste der möglichen technischen Risiken oder Schulden, die mit der Architektur der Software verbunden sind. Diese entstehen, wenn Fehler beim Design 
+und der Planung der Architektur oder der Erstellung der Dokumentation gemacht werden.
 
 <div class="formalpara-title">
 
