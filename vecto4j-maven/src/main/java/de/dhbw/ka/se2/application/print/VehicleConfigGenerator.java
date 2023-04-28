@@ -65,11 +65,10 @@ public class VehicleConfigGenerator {
 	}
 
 	private String getRandomizedMotorCodes(final boolean allowInvalid, final VehicleConfigurationMetadata metamodel) {
-		int motors = 1;
+		int motors = metamodel.getDrivenAxles();
 		if (allowInvalid) {
-			motors = 0;
+			motors += random.nextInt(1);
 		}
-		motors += random.nextInt(metamodel.getTotalAxles() * 2);
 		return getRandomizedCodes(motors, 'M');
 	}
 

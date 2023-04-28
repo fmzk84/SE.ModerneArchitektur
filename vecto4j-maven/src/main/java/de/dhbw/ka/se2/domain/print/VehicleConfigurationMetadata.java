@@ -3,11 +3,11 @@ package de.dhbw.ka.se2.domain.print;
 public class VehicleConfigurationMetadata {
 	private static final VehicleConfigurationMetadata[] MODELS_VALID = {
 			new VehicleConfigurationMetadata("983.493", 2, 1, VehicleType.TRACTOR), // >16T
-			new VehicleConfigurationMetadata("983.020", 2, 1, VehicleType.LORRY),
-			new VehicleConfigurationMetadata("983.648", 2, 1, VehicleType.TRACTOR),
-			new VehicleConfigurationMetadata("983.315", 2, 2, VehicleType.TRACTOR)
+			new VehicleConfigurationMetadata("983.648", 2, 1, VehicleType.TRACTOR)
 	};
 	private static final VehicleConfigurationMetadata[] MODELS_INVALID = {
+			new VehicleConfigurationMetadata("983.020", 2, 1, VehicleType.LORRY),
+			new VehicleConfigurationMetadata("983.315", 2, 2, VehicleType.TRACTOR),
 			new VehicleConfigurationMetadata("983.003", 4, 2, VehicleType.LORRY)
 	};
 
