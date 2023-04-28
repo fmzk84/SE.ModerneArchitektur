@@ -298,81 +298,15 @@ arc42 documentation.
 
 </div>
 
-Hier soll der Programmablauf textuell beschrieben werden.
+Hier wird der Programmablauf textuell beschrieben werden.
 
-* 1. Die Abteilung Dokumentendruck hat eine Fahrzeugkonfiguration und benötigt die Simulationsergebnisse für diese spezifische Simulation.
-* 2. Die Abteilung Dokumentendruck sendet die Fahrzeugkonfiguration über eine Schnittstelle an die Anwendung.
-* 3. Die Anwendung sendet jeweils über eine eigene Schnittstelle die Fahrzeugkonfiguration an die Abteilungen Fahrzeugentwicklung und Logisitk.
-* 3.1 Die Abteilung Fahrzeugentwicklung sendet über ihre Schnittstelle Messdaten zu den einzelnen Bauteilen an die Anwendung.
-* 3.2 Gleichzeitig sendet die Abteilung Logistik über ihre Schnittstelle das zur Fahrzeugkonfiguration gehörende Gewicht und die Abmessungen an die Anwendung.
-* 4. Die Anwendung mit den gesammelten Daten und der integrierten Vecto-Libraray führt die Anwendung die Simulation durch und erstellt die Messergebnisse.
-* 5. Die Anwendung sendet das Messergebniss an den Dokumentendruck mit einem Zeitstempel zurück.
-
-The runtime view describes concrete behavior and interactions of the
-system’s building blocks in form of scenarios from the following areas:
-
--   important use cases or features: how do building blocks execute
-    them?
-
--   interactions at critical external interfaces: how do building blocks
-    cooperate with users and neighboring systems?
-
--   operation and administration: launch, start-up, stop
-
--   error and exception scenarios
-
-Remark: The main criterion for the choice of possible scenarios
-(sequences, workflows) is their **architectural relevance**. It is
-**not** important to describe a large number of scenarios. You should
-rather document a representative selection.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should understand how (instances of) building blocks of your system
-perform their job and communicate at runtime. You will mainly capture
-scenarios in your documentation to communicate your architecture to
-stakeholders that are less willing or able to read and understand the
-static models (building block view, deployment view).
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-There are many notations for describing scenarios, e.g.
-
--   numbered list of steps (in natural language)
-
--   activity diagrams or flow charts
-
--   sequence diagrams
-
--   BPMN or EPCs (event process chains)
-
--   state machines
-
--   …
-
-See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
-documentation.
-
-## \<Runtime Scenario 1>
-
--   *\<insert runtime diagram or textual description of the scenario>*
-
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
-
-## \<Runtime Scenario 2>
-
-## …
-
-## \<Runtime Scenario n>
+1. Die Abteilung Dokumentendruck hat eine Fahrzeugkonfiguration und benötigt die Simulationsergebnisse für diese spezifische Simulation.
+2. Die Abteilung Dokumentendruck sendet die Fahrzeugkonfiguration über eine Schnittstelle an die Anwendung.
+3. Die Anwendung sendet jeweils über eine eigene Schnittstelle die Fahrzeugkonfiguration an die Abteilungen Fahrzeugentwicklung und Logisitk.
+4. Die Abteilung Fahrzeugentwicklung sendet über ihre Schnittstelle Messdaten zu den einzelnen Bauteilen an die Anwendung.
+4. Gleichzeitig sendet die Abteilung Logistik über ihre Schnittstelle das zur Fahrzeugkonfiguration gehörende Gewicht und die Abmessungen an die Anwendung.
+5. Die Anwendung mit den gesammelten Daten und der integrierten Vecto-Libraray führt die Anwendung die Simulation durch und erstellt die Messergebnisse.
+6. Die Anwendung sendet das Messergebniss an den Dokumentendruck mit einem Zeitstempel zurück.
 
 # Deployment View
 
