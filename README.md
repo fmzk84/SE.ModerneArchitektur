@@ -152,6 +152,10 @@ Die Begründungen und Alternativen zu den Einzelnen Entscheidungen sind in den M
 Eine Liste der möglichen technischen Risiken oder Schulden, die mit der Architektur der Software verbunden sind. Diese entstehen, wenn Fehler beim Design 
 und der Planung der Architektur oder der Erstellung der Dokumentation gemacht werden.
 
+* Hohe Komplexität: Ist das Design der Software zu Komplex und/oder die Dokumentation dazu nicht ausreichend, kann es passieren, dass Entwickler die bisher noch wenig mit der Software gearbeitet haben ihre Funktionsweise nicht nachvollziehen können und entsprechend nicht gut daran arbeiten können
+* Geringe Änderbarkeit: Wenn die Software nicht änderbar genung ist, kann es passieren, dass nicht schnell genug auf Gesetztesänderungen reagiert werden kann was dazu führen könnte, dass die Produktion stoppen muss.
+* Zu geringe Leistung: Wenn durch Tests nicht sichergestellt wird, dass die Software schnell gunug arbeitet kann es sein, dass sie nicht wirklich für den Produktivbetrieb geeignet ist.
+
 <div class="formalpara-title">
 
 **Motivation**
