@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
 
+import de.dhbw.ka.se2.domain.print.FullVehicle;
 import de.dhbw.ka.se2.domain.print.VehicleConfiguration;
 import de.dhbw.ka.se2.domain.print.VehicleConfigurationMetadata;
 
@@ -16,13 +17,16 @@ public class VehicleConfigGenerator {
 		this.random = new Random();
 	}
 
-	public VehicleConfiguration generateVehicle(final boolean allowInvalid) {
+	public FullVehicle generateVehicle(final boolean allowInvalid) {
 		VehicleConfiguration config = new VehicleConfiguration();
 		VehicleConfigurationMetadata metamodel = getRandomizedModel(allowInvalid);
 		config.setModel(metamodel.getModel());
 		config.setBuildDate(getRandomizedDate(allowInvalid));
 		config.setCodes(getRandomizedCodes(allowInvalid, metamodel));
-		return config;
+		FullVehicle response = new FullVehicle();
+		response.setConfig(config);
+		response.setMetadata(metamodel);
+		return response;
 	}
 
 	private VehicleConfigurationMetadata getRandomizedModel(final boolean allowInvalid) {
@@ -61,11 +65,10 @@ public class VehicleConfigGenerator {
 	}
 
 	private String getRandomizedMotorCodes(final boolean allowInvalid, final VehicleConfigurationMetadata metamodel) {
-		int motors = 1;
+		int motors = metamodel.getDrivenAxles();
 		if (allowInvalid) {
-			motors = 0;
+			motors += random.nextInt(1);
 		}
-		motors += random.nextInt(metamodel.getTotalAxles() * 2);
 		return getRandomizedCodes(motors, 'M');
 	}
 

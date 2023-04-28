@@ -1,28 +1,30 @@
-package de.dhbw.ka.se2.plugin.vehicleData;
+package de.dhbw.ka.se2.plugin.vehicledata;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.util.List;
 
 import org.apache.hc.client5.http.fluent.Request;
 import org.apache.hc.client5.http.fluent.Response;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import de.dhbw.ka.se2.application.print.VehicleConfigGenerator;
-import de.dhbw.ka.se2.domain.logistics.VehicleWeights;
 import de.dhbw.ka.se2.domain.print.VehicleConfiguration;
+import de.dhbw.ka.se2.domain.vehicledata.VehicleComponent;
 
 public class VehicleDataClient {
 	public static void main(String[] args) {
 		VehicleConfigGenerator gen = new VehicleConfigGenerator();
-		VehicleConfiguration vehicle = gen.generateVehicle(false);
-		System.out.println(new VehicleDataClient().getWeights(vehicle));
+		VehicleConfiguration vehicle = gen.generateVehicle(false).getConfig();
+		System.out.println(new VehicleDataClient().getComponents(vehicle));
 	}
 
-	public VehicleWeights getWeights(final VehicleConfiguration vehicle) {
+	public List<VehicleComponent> getComponents(final VehicleConfiguration vehicle) {
 		// Anfrage serialisieren
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.registerModule(new JavaTimeModule());
@@ -37,7 +39,7 @@ public class VehicleDataClient {
 		}
 
 		// Request vorbereiten
-		Request request = Request.post("https://logistics.dh.dtr0cks.de/api/v1/vehicle/weights")
+		Request request = Request.post("https://vehicle-data.dh.dtr0cks.de/api/v1/vehicles/components")
 				.bodyStream(in)
 				.addHeader("Content-Type", "application/json")
 				.addHeader("Accept", "application/json");
@@ -56,7 +58,7 @@ public class VehicleDataClient {
 			throw new RuntimeException("Request failed - missing response!");
 		}
 		try {
-			return objectMapper.readValue(body, VehicleWeights.class);
+			return objectMapper.readValue(body, new TypeReference<List<VehicleComponent>>() {});
 		} catch (IOException e) {
 			throw new RuntimeException("Request failed - cannot parse response!");
 		}
