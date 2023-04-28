@@ -51,7 +51,19 @@ Stakeholder sind hauptsächlich die drei Abteilungen Dokumentendruck, Fahrzeugen
 
 # Architecture Constraints
 
-Die Softwarearchitektur ist unter anderem durch die bestehenden APIs, die Vecto-Library und weiteren bestehenden Code beschränkt.
+Das Projekt beinhaltet folgende Vorgaben und Randbedingungen:
+
+- **Vecto-Libary:** Eine Vecto-Libary welche die CO2-Werte von schweren Nutzfahrzeuge simuliert.
+- Folgende 3 API
+- **Logistik-API:** Eine API welche Daten wie Baummuster, Produktionsdatum und Konfiguration
+  entgegennimmt und Daten zu Gewicht und Abmessung ausgibt.
+- **Fahrzeug-API:** Eine API welche eine Konfiguration entgegennimmt und die Messdaten ausgibt.
+- **Dokumentendruck-API:** Eine API welche eine Konfiguration entgegennimmt und Daten zum individuellen
+  Simulationsergebnis ausgibt.
+
+- Es soll ein austausch mit einer Datenbank stattfinden
+- Es soll Java als Programmiersprache zur Entwicklung genutzt werden.
+- Es soll einen Output für den Druck erzeugt werden
 
 # System Scope and Context
 
