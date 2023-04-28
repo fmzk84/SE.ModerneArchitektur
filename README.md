@@ -51,9 +51,13 @@ Randbedingungen:
 
 ### Systemkontext
 
+Hier soll das System und beteiligete Akteure auf einer abstrakten Ebene dargestellt werden.
+
 ![C4_Systemkontext](https://user-images.githubusercontent.com/114069919/235234784-8b159e59-3f43-4707-83d1-57e5a82f7159.JPG)
 
 ### Komponentensicht
+
+In der Komponentensicht wird neben das Innenleben des Systems näher betrachtet.
 
 ![Kontext_System](https://user-images.githubusercontent.com/114069919/235234220-42776560-b78b-439f-95e0-983502253f26.JPG)
 
