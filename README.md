@@ -49,10 +49,16 @@ Der Dokumentendruck benötigt nach einer neuen Rechtsgrundlage individuelle Simu
 
 Stakeholder sind hauptsächlich die drei Abteilungen Dokumentendruck, Fahrzeugentwicklung und Logisitk. Ein weiterer möglicher Stakeholder ist der Hersteller der Vecto4J Library.
 
-# Architecture Constraints
+# Randbedingungen
 
 Das Projekt beinhaltet folgende Vorgaben und Randbedingungen:
 
+Vorgaben:
+- Es soll ein austausch mit einer **Datenbank** stattfinden
+- Es soll **Java** als Programmiersprache zur Entwicklung genutzt werden.
+- Es soll einen **Output** für den Druck erzeugt werden
+
+Randbedingungen:
 - **Vecto-Libary:** Eine Vecto-Libary welche die CO2-Werte von schweren Nutzfahrzeuge simuliert.
 - Folgende 3 API
 - **Logistik-API:** Eine API welche Daten wie Baummuster, Produktionsdatum und Konfiguration
@@ -60,10 +66,6 @@ Das Projekt beinhaltet folgende Vorgaben und Randbedingungen:
 - **Fahrzeug-API:** Eine API welche eine Konfiguration entgegennimmt und die Messdaten ausgibt.
 - **Dokumentendruck-API:** Eine API welche eine Konfiguration entgegennimmt und Daten zum individuellen
   Simulationsergebnis ausgibt.
-
-- Es soll ein austausch mit einer Datenbank stattfinden
-- Es soll Java als Programmiersprache zur Entwicklung genutzt werden.
-- Es soll einen Output für den Druck erzeugt werden
 
 # System Scope and Context
 
