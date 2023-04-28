@@ -49,6 +49,8 @@ Randbedingungen:
   
 # Bausteinsicht
 
+Die Bausteinsicht zeigt die Struktur des Systems, also ihre Bestandteile, und wie diese zusammenhängen.
+
 ### Systemkontext
 
 In der Systemkontextsicht werden das System und beteiligete Akteure auf einer abstrakten Ebene dargestellt.
@@ -69,9 +71,10 @@ Hier wird der Programmablauf textuell beschrieben werden.
 2. Die Abteilung Dokumentendruck sendet die Fahrzeugkonfiguration über eine Schnittstelle an die Anwendung.
 3. Die Anwendung sendet jeweils über eine eigene Schnittstelle die Fahrzeugkonfiguration an die Abteilungen Fahrzeugentwicklung und Logisitk.
 4. Die Abteilung Fahrzeugentwicklung sendet über ihre Schnittstelle Messdaten zu den einzelnen Bauteilen an die Anwendung.
-4. Gleichzeitig sendet die Abteilung Logistik über ihre Schnittstelle das zur Fahrzeugkonfiguration gehörende Gewicht und die Abmessungen an die Anwendung.
-5. Die Anwendung mit den gesammelten Daten und der integrierten Vecto-Libraray führt die Anwendung die Simulation durch und erstellt die Messergebnisse.
-6. Die Anwendung sendet das Messergebniss an den Dokumentendruck mit einem Zeitstempel zurück.
+5. Gleichzeitig sendet die Abteilung Logistik über ihre Schnittstelle das zur Fahrzeugkonfiguration gehörende Gewicht und die Abmessungen an die Anwendung.
+6. Die Anwendung mit den gesammelten Daten und der integrierten Vecto-Libraray führt die Anwendung die Simulation durch und erstellt die Messergebnisse.
+7. Die Anwendung sendet das Messergebniss an den Dokumentendruck mit einem Zeitstempel zurück.
+8. Das Messergebnis wird in einer Datenbank gespeichert.
 
 # Architekturentscheidungen
 
