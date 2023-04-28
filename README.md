@@ -49,7 +49,8 @@ Randbedingungen:
   
 # Bausteinsicht
 
-Die Bausteinsicht zeigt die Struktur des Systems, also ihre Bestandteile, und wie diese zusammenhängen.
+Die Bausteinsicht zeigt die Struktur des Systems, also seine Bestandteile, Zusammenhänge und Abhängigkeiten. Die Struktur wird auf zwei 
+verschiedenen Ebenen betrachtet.
 
 ### Systemkontext
 
