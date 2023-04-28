@@ -66,7 +66,7 @@ In der Komponentensicht wird das Innenleben des Systems näher betrachtet.
 
 # Laufzeitsicht
 
-Hier wird der Programmablauf textuell beschrieben werden.
+Hier wird der Programmablauf textuell beschrieben.
 
 1. Die Abteilung Dokumentendruck hat eine Fahrzeugkonfiguration und benötigt die Simulationsergebnisse für diese spezifische Simulation.
 2. Die Abteilung Dokumentendruck sendet die Fahrzeugkonfiguration über eine Schnittstelle an die Anwendung.
