@@ -10,7 +10,7 @@ Die Anweundung soll eine hohe Sklaierbarkeit und Konsistenz haben, dafür sollen
 ## Berücksichtigte Optionen
 
 * Docker
-* Gr
+* Podman
 
 
 ## Ergebnis der Entscheidung
