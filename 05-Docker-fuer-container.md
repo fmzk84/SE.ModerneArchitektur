@@ -15,7 +15,7 @@ Die Anweundung soll eine hohe Sklaierbarkeit und Konsistenz haben, dafür sollen
 
 ## Ergebnis der Entscheidung
 
-Ausgewählte Option: "Docker", Es wurde entschieden, dass Dcoker das Tool für die Containerisierung wird. 
+Ausgewählte Option: "Docker", Es wurde entschieden, dass Docker das Tool für die Containerisierung wird. 
 
 - Einfach zu lernen und anzuwenden
 - Ermöglicht eine hohe Konsisitenz und Skalierbarkeit durch Container
