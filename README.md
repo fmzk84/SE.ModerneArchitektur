@@ -1,23 +1,4 @@
-# 
-
-**About arc42**
-
-arc42, the template for documentation of software and system
-architecture.
-
-Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. See <https://arc42.org>.
-
-<div class="note">
-
-This version of the template contains some help and explanations. It is
-used for familiarization with arc42 and the understanding of the
-concepts. For documentation of your own system you use better the
-*plain* version.
-
-</div>
+# Software Engineering II - Moderne Software Architekturen
 
 ## Aufgabenstellung
 
@@ -113,3 +94,15 @@ und der Planung der Architektur oder der Erstellung der Dokumentation gemacht we
 * Hohe Komplexität: Ist das Design der Software zu Komplex und/oder die Dokumentation dazu nicht ausreichend, kann es passieren, dass Entwickler die bisher noch wenig mit der Software gearbeitet haben ihre Funktionsweise nicht nachvollziehen können und entsprechend nicht gut daran arbeiten können
 * Geringe Änderbarkeit: Wenn die Software nicht änderbar genung ist, kann es passieren, dass nicht schnell genug auf Gesetztesänderungen reagiert werden kann was dazu führen könnte, dass die Produktion stoppen muss.
 * Zu geringe Leistung: Wenn durch Tests nicht sichergestellt wird, dass die Software schnell gunug arbeitet kann es sein, dass sie nicht wirklich für den Produktivbetrieb geeignet ist.
+
+# 
+
+**About arc42**
+
+arc42, the template for documentation of software and system
+architecture.
+
+Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
+
+Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
+contributors. See <https://arc42.org>.
