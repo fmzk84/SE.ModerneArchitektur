@@ -76,41 +76,6 @@ Randbedingungen:
 
 ![Kontext_System](https://user-images.githubusercontent.com/114069919/235234220-42776560-b78b-439f-95e0-983502253f26.JPG)
 
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Maintain an overview of your source code by making its structure
-understandable through abstraction.
-
-This allows you to communicate with your stakeholder on an abstract
-level without disclosing implementation details.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The building block view is a hierarchical collection of black boxes and
-white boxes (see figure below) and their descriptions.
-
-![Hierarchy of building blocks](images/05_building_blocks-EN.png)
-
-**Level 1** is the white box description of the overall system together
-with black box descriptions of all contained building blocks.
-
-**Level 2** zooms into some building blocks of level 1. Thus it contains
-the white box description of selected building blocks of level 1,
-together with black box descriptions of their internal building blocks.
-
-**Level 3** zooms into selected building blocks of level 2, and so on.
-
-See [Building Block View](https://docs.arc42.org/section-5/) in the
-arc42 documentation.
-
 # Laufzeitsicht
 
 Hier wird der Programmablauf textuell beschrieben werden.
