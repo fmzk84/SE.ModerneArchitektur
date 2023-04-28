@@ -298,6 +298,16 @@ arc42 documentation.
 
 </div>
 
+Hier soll der Programmablauf textuell beschrieben werden.
+
+* 1. Die Abteilung Dokumentendruck hat eine Fahrzeugkonfiguration und benötigt die Simulationsergebnisse für diese spezifische Simulation.
+* 2. Die Abteilung Dokumentendruck sendet die Fahrzeugkonfiguration über eine Schnittstelle an die Anwendung.
+* 3. Die Anwendung sendet jeweils über eine eigene Schnittstelle die Fahrzeugkonfiguration an die Abteilungen Fahrzeugentwicklung und Logisitk.
+* 3.1 Die Abteilung Fahrzeugentwicklung sendet über ihre Schnittstelle Messdaten zu den einzelnen Bauteilen an die Anwendung.
+* 3.2 Gleichzeitig sendet die Abteilung Logistik über ihre Schnittstelle das zur Fahrzeugkonfiguration gehörende Gewicht und die Abmessungen an die Anwendung.
+* 4. Die Anwendung mit den gesammelten Daten und der integrierten Vecto-Libraray führt die Anwendung die Simulation durch und erstellt die Messergebnisse.
+* 5. Die Anwendung sendet das Messergebniss an den Dokumentendruck mit einem Zeitstempel zurück.
+
 The runtime view describes concrete behavior and interactions of the
 system’s building blocks in form of scenarios from the following areas:
 
